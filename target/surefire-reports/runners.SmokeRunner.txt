@@ -1,4 +1,10 @@
 -------------------------------------------------------------------------------
 Test set: runners.SmokeRunner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 61.192 s - in runners.SmokeRunner
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 41.921 s <<< FAILURE! - in runners.SmokeRunner
+Search for a product and add to the Cart.Searching for a products and adding to the shopping cart  Time elapsed: 41.204 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.clear()" because "element" is null
+	at utils.CommonMethods.sendText(CommonMethods.java:57)
+	at steps.AddToCartSteps.user_enters_the_keyword_in_search_text_field_and_clicks(AddToCartSteps.java:12)
+	at ✽.user enters the keyword in search text field and clicks(file:///Users/engincevik/IdeaProjects/AmazonProject/src/test/resources/features/AddToCart.feature:12)
+

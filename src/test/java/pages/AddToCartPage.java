@@ -3,8 +3,13 @@ package pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import utils.CommonMethods;
 
-public class AddToCartPage {
+public class AddToCartPage extends CommonMethods {
+
+
+@FindBy(xpath="//*[@class='hm-icon-label']")
+public WebElement dropD;
 
 @FindBy (id="twotabsearchtextbox")
     public WebElement searchField;
@@ -20,6 +25,9 @@ public class AddToCartPage {
     public WebElement addedText;
 @FindBy(xpath="//*[@id='sw-gtc']")
     public WebElement goCart;
+
+
+
 
 
 }

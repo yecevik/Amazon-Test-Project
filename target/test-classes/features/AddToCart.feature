@@ -9,7 +9,7 @@ Feature: Search for a product and add to the Cart
    @addcart1
   Scenario: Searching for a products and adding to the shopping cart
 
-    When user enters the keyword in search text field and clicks
+     When user clicks dropdown and selects category
     And user clicks on specific product
     And user selects the size of the product and clicks on add to cart button
     And user verifies its added
