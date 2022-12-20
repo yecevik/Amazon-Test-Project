@@ -17,6 +17,9 @@ public WebElement passwordTextField;
 @FindBy (id="signInSubmit")
 public WebElement submit;
 
+@FindBy(xpath = "//span[contains(text(),'Hello')]")
+public WebElement welcome;
+//span[contains(text(),'Hello')]
 
     public LoginPage() {
         //call selenium page factory
